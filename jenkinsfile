@@ -9,8 +9,6 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/ankitno1/star-agile-banking-finance.git'
-
-                // Run Maven on a Unix agent.
                 sh "mvn clean package"
 
             }        
